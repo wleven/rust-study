@@ -21,10 +21,11 @@ fn main() {
         "1" => guess_game::start(),
 
         "2" => {
-            let area = calc_area::calc(&calc_area::React {
+            let area = calc_area::React {
                 width: 10,
                 height: 2,
-            });
+            }
+            .calc();
 
             println!("The react area is {}", area)
         }
